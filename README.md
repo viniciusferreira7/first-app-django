@@ -20,7 +20,7 @@ This project was created to practice and consolidate web development knowledge w
 
 ```bash
 git clone <repository-url>
-cd first-app-django
+cd recipes-django
 ```
 
 ### 2. Create a virtual environment
@@ -84,12 +84,26 @@ The project will be available at `http://127.0.0.1:8000/`
 ## Project Structure
 
 ```
-first-app-django/
+recipes-django/
 ├── manage.py
 ├── README.md
 ├── .gitignore
 ├── requirements.txt
-└── [Django apps]
+├── recipes/
+│   ├── migrations/
+│   ├── static/
+│   ├── templates/
+│   │   └── recipes/
+│   │       ├── pages/
+│   │       └── partials/
+│   ├── models.py
+│   ├── views.py
+│   ├── urls.py
+│   └── admin.py
+└── project/
+    ├── settings.py
+    ├── urls.py
+    └── wsgi.py
 ```
 
 ## Testing
