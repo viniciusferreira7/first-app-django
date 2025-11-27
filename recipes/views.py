@@ -6,5 +6,11 @@ def home(request: HttpRequest) -> HttpResponse:
     return render(
         request=request,
         template_name='recipes/pages/home.html',
-        context={"name": "John Doe"}
+    )
+
+
+def recipe(request: HttpRequest) -> HttpResponse:
+    return render(
+        request=request,
+        template_name='recipes/pages/home.html',
     )
